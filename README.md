@@ -92,6 +92,8 @@
 
 ### Тестирование
 
+![22](https://github.com/user-attachments/assets/222813cd-efa2-4e27-803a-75bef677fbc6)
+![21](https://github.com/user-attachments/assets/6a1dcfc8-003a-467c-9338-5bfa46e71719)
 
 
 ## Задача 4
@@ -129,6 +131,7 @@
 
 ### Тестирование
 
+![31](https://github.com/user-attachments/assets/f8f0588b-3918-4a3f-b589-6452ea31c6ff)
 
 
 
