@@ -3,14 +3,14 @@ is_member(X, [X|_]) :- !.
 is_member(X, [_|T]) :- is_member(X, T).
 
 % 2. SUBSET: Проверка на подмножество 
-% Базис: пустой список всегда является подмножеством
+
 is_subset([], _) :- !.
 % Рекурсия: голова H должна быть в S, и хвост T тоже должен быть подмножеством S
 is_subset([H|T], S) :-
     is_member(H, S),
     is_subset(T, S).
 
-% 3. MAIN SOLVE: Ввод данных и проверка в обе стороны
+
 solve :-
     write('Enter first set (e.g. [1,2,3].): '),
     read(Set1),
@@ -26,5 +26,5 @@ solve :-
     ),
     halt.
 
-% Точка входа для автоматического запуска
+
 :- initialization(solve).
