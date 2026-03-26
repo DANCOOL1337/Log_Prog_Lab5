@@ -18,7 +18,7 @@ unique_num(Num) :-
 
 solve :-
     write('Enter any number and a period (for example, 1.) to start: '),
-    read(_), % Считывание входных данных (без проверки, по условию)
+    read(_),
     
     % findall собирает все значения Num, для которых unique_num истинен
     findall(N, unique_num(N), ResultList),
