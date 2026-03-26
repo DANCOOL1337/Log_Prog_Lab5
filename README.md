@@ -30,7 +30,7 @@
 
 ### Тестирование
 
-<img width="1740" height="751" alt="image" src="https://github.com/user-attachments/assets/c6aad169-aee0-4c57-8f06-0f5bfbc15dda" />
+
 
 
 
@@ -57,7 +57,7 @@
 
 ### Тестирование
 <img width="1724" height="628" alt="image" src="https://github.com/user-attachments/assets/05054d59-b7f8-4e7b-894d-11ea1bc7ef96" />
-
+<img width="1740" height="751" alt="image" src="https://github.com/user-attachments/assets/c6aad169-aee0-4c57-8f06-0f5bfbc15dda" />
 
 
 ## Задача 3
