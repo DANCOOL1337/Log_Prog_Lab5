@@ -1,30 +1,29 @@
-% РЕКУРСИЯ: Предикат выбора элемента из списка (аналог примеров из Лекции 5 и 6)
-% Базис: элемент в голове списка
+
 select_digit(X, [X|T], T).
-% Шаг: рекурсивный поиск в хвосте
+
 select_digit(X, [H|T], [H|R]) :- 
     select_digit(X, T, R).
 
-% Генерация трехзначного числа с уникальными цифрами
+
 unique_num(Num) :-
-    % Первая цифра от 1 до 9 (согласно правилам трехзначных чисел)
+    
     select_digit(D1, [1,2,3,4,5,6,7,8,9], Rest1),
-    % Вторая цифра (теперь 0 доступен для выбора)
+    
     select_digit(D2, [0|Rest1], Rest2),
-    % Третья цифра
+    
     select_digit(D3, Rest2, _),
-    % Сборка числа без операций деления
+    
     Num is D1*100 + D2*10 + D3.
 
-% Основной предикат (аналог блока solve/goal)
+
 solve :-
-    write('Введите любое число и точку (например, 1.) для запуска: '),
+    write('Enter any number and a period (for example, 1.) to start: '),
     read(_), % Считывание входных данных (без проверки, по условию)
     
     % findall собирает все значения Num, для которых unique_num истинен
     findall(N, unique_num(N), ResultList),
     
-    write('Список трехзначных чисел без повторяющихся цифр:'), nl,
+    write('List of three-digit numbers without repeating digits:'), nl,
     write(ResultList), nl,
     halt.
 
