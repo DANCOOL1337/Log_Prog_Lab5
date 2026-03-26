@@ -18,7 +18,6 @@ solve :-
     
     ( (Dasha = uman, Lena \= kramatorsk) ; (Dasha \= uman, Lena = kramatorsk) ),
 
-    % 3. OUTPUT PHASE
     write('    Solution Found '), nl,
     format('Alik is from ~w~n', [Alik]),
     format('Borya is from ~w~n', [Borya]),
